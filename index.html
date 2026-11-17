@@ -1,0 +1,696 @@
+<!DOCTYPE html><html class="dark" lang="fr"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..700;1,300..700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary-fixed-variant": "#3c494e",
+          "on-tertiary-fixed": "#111d22",
+          "on-primary-fixed": "#251a00",
+          "on-primary-fixed-variant": "#56441b",
+          "surface-container-lowest": "#0d0e11",
+          "surface-dim": "#121316",
+          "tertiary": "#ddeaf1",
+          "on-tertiary": "#263237",
+          "outline": "#989082",
+          "primary-container": "#e3c994",
+          "on-surface-variant": "#cfc5b6",
+          "primary-fixed-dim": "#ddc48f",
+          "on-secondary-fixed": "#311300",
+          "secondary": "#ffb688",
+          "tertiary-fixed": "#d8e5eb",
+          "on-secondary-fixed-variant": "#733500",
+          "surface-container-low": "#1b1b1f",
+          "inverse-on-surface": "#303034",
+          "on-surface": "#e3e2e6",
+          "on-error-container": "#ffdad6",
+          "surface-container": "#1f1f23",
+          "outline-variant": "#4c463b",
+          "primary-fixed": "#fbdfa9",
+          "tertiary-fixed-dim": "#bcc9cf",
+          "secondary-container": "#853f00",
+          "on-secondary-container": "#ffb688",
+          "surface-container-high": "#292a2d",
+          "on-tertiary-container": "#4c585d",
+          "on-background": "#e3e2e6",
+          "error": "#ffb4ab",
+          "tertiary-container": "#c1ced4",
+          "surface-bright": "#38393c",
+          "background": "#121316",
+          "primary": "#ffe5b2",
+          "surface-variant": "#343538",
+          "on-secondary": "#512400",
+          "surface-container-highest": "#343538",
+          "inverse-primary": "#6f5c31",
+          "on-error": "#690005",
+          "surface": "#121316",
+          "secondary-fixed-dim": "#ffb688",
+          "inverse-surface": "#e3e2e6",
+          "on-primary-container": "#665429",
+          "secondary-fixed": "#ffdbc7",
+          "error-container": "#93000a",
+          "on-primary": "#3e2e07",
+          "surface-tint": "#ddc48f"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-lg": "1.75rem",
+          "space-xl": "3rem",
+          "space-xs": "0.25rem",
+          "space-sm": "0.5rem",
+          "margin": "2.5rem",
+          "gutter": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "display-lg": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "500"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.15em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "300"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "300"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.12em",
+              "fontWeight": "600"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "68px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="absolute top-0 inset-x-0 z-50 bg-gradient-to-b from-surface-container-lowest/80 via-surface-container-lowest/30 to-transparent backdrop-blur-sm"><div class="h-20 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group text-left" href="#"><div class="w-9 h-9 rounded-full border border-primary/40 bg-surface-container-high/40 backdrop-blur-md flex items-center justify-center shadow-[0_0_16px_rgba(227,201,148,0.15)] group-hover:border-primary group-hover:bg-primary-container transition-all"><span class="font-headline-sm text-primary group-hover:text-on-primary-container transition-colors text-[18px] leading-none">✦</span></div><div class="flex flex-col"><span class="font-headline-sm text-[20px] text-primary tracking-[0.2em] uppercase leading-none font-normal">AURELIA</span><span class="font-label-sm text-[10px] uppercase tracking-[0.25em] text-outline mt-1 font-light">Sanctuaire Thermal</span></div></a></div><nav class="hidden lg:flex items-center gap-space-xl"><a class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors py-1 relative group" href="#rituels"><span>Bains &amp; Thermes</span><span class="absolute bottom-0 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full"></span></a><a aria-current="page" class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-primary py-1 relative group font-medium" href="#"><span class="border-b border-primary-container pb-1">Soins Signatures</span></a><a class="font-label-sm text-label-sm uppercase tracking-[0.18em] text-on-surface-variant hover:text-primary transition-colors py-1 relative group" href="#suites-privees"><span>Le Sanctuaire</span><span class="absolute bottom-0 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full"></span></a></nav><div class="flex items-center gap-space-md"><a class="hidden md:flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors font-label-sm text-label-sm uppercase tracking-widest mr-2" href="tel:+33140502010"><span class="material-symbols-outlined text-secondary text-[16px]">call</span><span>Conciergerie</span></a><a class="bg-primary-container text-on-primary font-label-sm text-[11px] uppercase tracking-[0.15em] font-semibold px-space-md py-2 rounded-full shadow-[0_0_16px_rgba(227,201,148,0.2)] hover:bg-primary transition-all flex items-center gap-space-xs" href="#reservation"><span class="material-symbols-outlined text-[15px]">calendar_month</span><span>Réserver une Séance</span></a><div class="w-8 h-8 rounded-full border border-primary/30 bg-surface-container-high/60 backdrop-blur-md flex items-center justify-center shrink-0 cursor-pointer hover:border-primary transition-all"><span class="material-symbols-outlined text-primary text-[16px]">person</span></div></div></div></header><main class="w-full bg-background"><div class="flex flex-col w-full">
+<!-- HERO SECTION WITH FULL-BLEED BACKGROUND -->
+<section class="relative w-full min-h-[92vh] flex items-center justify-center pt-32 pb-16 px-margin overflow-hidden"><div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAT_aTtMuYub5gruIKEioObxVGxpyN8Fh6Adt95IGBu8B9H7L711qYMgyIGEEDLUw3lU204pMsFRcw3zeLqwbgKpwB5DeER2BRnoHyd9t4TZdocFIW19QofSgYF0Wxifg6b5_TvjeI7zAjzstvaCiYh47_ilRvEgulE-5km1Pva0VasMP4cNRwJpwFyFSkVc8fxYzahiaoY9bGGpKb12kGGkj9pr3tP2nNWoWxu7KgP&quot;);"></div><div class="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center text-center my-auto pt-8"><div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-lowest/85 backdrop-blur-xl shadow-xl mb-space-lg"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-medium">Hammam de Prestige &amp; Bains Thermaux Citadins</span></div><h1 class="font-headline-lg text-headline-lg md:text-[56px] md:leading-[64px] text-primary max-w-4xl tracking-tight drop-shadow-md">Une Parenthèse Feutrée Sous les Voûtes de Pierre au Cœur de la Métropole</h1><p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mt-space-md leading-relaxed drop-shadow drop-shadow-md">Au sous-sol d’un hôtel particulier historique, redécouvrez le rituel ancestral du bain et du repos absolu. Bains chauffés en porphyre, savonnage d’Alep traditionnel et modelages sur mesure sous de majestueuses ogives sculptées.</p><div class="flex flex-wrap items-center justify-center gap-space-md mt-space-xl"><a class="bg-primary-container text-on-primary font-label-lg text-label-lg uppercase px-space-lg py-space-md rounded-lg shadow-xl hover:bg-primary transition-all flex items-center gap-space-xs" href="#rituels"><span class="material-symbols-outlined text-[18px]">water_ph</span><span>Découvrir nos Rituels &amp; Bains</span></a><a class="bg-surface-container-high/80 text-primary font-label-lg text-label-lg uppercase px-space-lg py-space-md rounded-lg backdrop-blur-md shadow-lg hover:bg-surface-container-highest transition-all flex items-center gap-space-xs" href="#suites-privees"><span class="material-symbols-outlined text-[18px]">hotel</span><span>Réserver une Suite Privée</span></a></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md w-full max-w-4xl mt-space-xl pt-space-md"><div class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-lowest/80 backdrop-blur-2xl shadow-xl text-left"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary"><span class="material-symbols-outlined text-[20px]">hot_tub</span></div><div><div class="font-title-md text-title-md text-on-surface font-medium leading-none">Hammam Chauffé</div><div class="font-label-sm text-label-sm text-outline mt-1 uppercase tracking-wider">Calacatta &amp; Vapeur 48°C</div></div></div><div class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-lowest/80 backdrop-blur-2xl shadow-xl text-left"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary"><span class="material-symbols-outlined text-[20px]">spa</span></div><div><div class="font-title-md text-title-md text-on-surface font-medium leading-none">Savon Noir &amp; Kessa</div><div class="font-label-sm text-label-sm text-outline mt-1 uppercase tracking-wider">Exfoliation d'Alep</div></div></div><div class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-lowest/80 backdrop-blur-2xl shadow-xl text-left"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary"><span class="material-symbols-outlined text-[20px]">group</span></div><div><div class="font-title-md text-title-md text-on-surface font-medium leading-none">Intimité Préservée</div><div class="font-label-sm text-label-sm text-outline mt-1 uppercase tracking-wider">Max 8 Hôtes par Session</div></div></div></div></div></section>
+<!-- SECTION A: L'EXPÉRIENCE SENSORIELLE CITADINE -->
+<section class="w-full py-space-xl px-margin bg-background">
+<div class="max-w-6xl mx-auto space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-medium">Trois Piliers Thérapeutiques</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">L'Expérience Sensorielle Citadine</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Chaque itinéraire est méticuleusement chronométré pour désactiver l'hyperstimulation métropolitaine et restaurer l'équilibre bio-énergétique des tissus.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- 1. Le Bain Oriental Impérial -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-2xl transition-all hover:bg-surface-container">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Intimate indoor luxury subterranean hammam with vaulted white veined marble ceiling, ambient warm candlelight in architectural niches, thick soothing rising steam, warm stone slab massage table, dark amber accents, brass vessels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGZaBRym0qs1TZYd1hl02klWk5PJzfljKTMVwvXat6xX4qRLSCzswC7P3N6_jtYgoDtrIVrc4Osff-bVsNtFhp3aDFYaUWSic5l5FxMtcbFOdvyBT2hp4lu6fqXvUpe9zNmfO11E-77LbUa_rszQNyUv0_5vrW4LTYslmOB1qOkPd0EV3Sk1_3v9v2rfyQcMtiKcK9F7L-_JQhYZ33Rxq5I8FKdRRiUkPdQrznSX-p">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded font-label-sm text-label-sm uppercase tracking-widest text-primary">
+              Rituel 01
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Le Bain Oriental Impérial</h3>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+                Bain de vapeur intense sous voûte marbrée, gommage tonifiant au gant kessa sur dalle tiède en marbre blanc de Carrare, suivi d’un enveloppement purifiant au rhassoul d'Atlas et à l’hydrolat de fleur d'oranger biologique.
+              </p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Dalle chauffante en marbre 39°C</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Savon noir à l'eucalyptus noble</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Onction à l’huile d’argan pure</span>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-space-xs text-primary font-label-lg text-label-lg uppercase tracking-wider group-hover:text-primary-fixed transition-colors" href="#reservation">
+<span>Consulter le Protocole</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 2. L'Immersion Hydrothermale Minérale -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-2xl transition-all hover:bg-surface-container">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Underground indoor thermal hydrotherapy vitality pool carved from dark honed graphite and Italian marble, subterranean archways, warm luminous under-water glowing jets, delicate rising steam, obsidian loungers, candlelit recesses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD06z4R1ReUgY3gF8pjH_2UqqrX6o4M3YKPxOBt7FjjL0lDei0yescXMCsqA1UzLep7NLDQKg1WkDWe3Scj5Zz2sIt3kh5GFXwpXIkbJAFnFah8xFY-6fSGvyk4zSGtCSEAjUTFOeQPejEOYFVfLVz4omV7UXxk4EJkWsm7Xw7xm3_U26iedyTxgwKf2pIVO3xM_UIz8FJOoN47COwS2O2I6wl5q1EQ8VHY-Jfn2vv0">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded font-label-sm text-label-sm uppercase tracking-widest text-secondary">
+              Rituel 02
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">L'Immersion Hydrothermale Minérale</h3>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+                Bassin d'immersion taillé dans le porphyre maintenu à 36°C, circuit de buses décontracturantes dorsales et cervicales, enrichi de cristaux de sels de la Mer Morte et d’un concentré de magnésium marin pour apaiser les tensions musculaires.
+              </p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Bassin d'immersion salin 36°C</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Hydrojets micro-pulsés anti-stress</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Bain froid de contraste 14°C</span>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-space-xs text-primary font-label-lg text-label-lg uppercase tracking-wider group-hover:text-primary-fixed transition-colors" href="#reservation">
+<span>Consulter le Protocole</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- 3. L'Éveil Kobido & Rajeunissement Visage -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-2xl transition-all hover:bg-surface-container">
+<div class="relative h-64 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxurious indoor facial treatment suite with bespoke linen treatment bed, rose quartz massage tools, amber glass botanical elixir bottles, dark stone walls, ambient soft downlighting, pure tranquility inside vaulted chamber" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFQZXD_ORbPDI5729iY6rRrLVWDQZytWjqFpUijBL0zTmrH9wp9RYQTAQva2GnH34dajbZthororT8npxdxAr5sXqf53TopwXVyzzpUByuPqZxkZCO-zsGsJX-gUKipt4GlAB83CWs9NavPWJf5Q4ItR66B0fjn8g1Svfz5k9gwiqgQa8PWn_f6byCJDdVLEIOJUTlbnCseipMQJvEohQuLL14_xi9TS138K8NOuCT">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent"></div>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded font-label-sm text-label-sm uppercase tracking-widest text-primary">
+              Rituel 03
+            </div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">L'Éveil Kobido &amp; Rajeunissement</h3>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+                Massage liftant ancestral nippon combiné au drainage lymphatique facial aux rouleaux de quartz rose glacé. Application d'un sérum botanique rare infusé d’huile de figue de barbarie et d’immortelle corse.
+              </p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Pétrissage fasciale Kobido 45 gestes</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Cryo-lissage aux sphères de quartz</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Masque bio-cellulose or végétal</span>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-space-xs text-primary font-label-lg text-label-lg uppercase tracking-wider group-hover:text-primary-fixed transition-colors" href="#reservation">
+<span>Consulter le Protocole</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION B: TARIFS & RITUELS SIGNATURES -->
+<section class="w-full py-space-xl px-margin bg-surface-container-lowest" id="rituels">
+<div class="max-w-6xl mx-auto space-y-space-xl">
+<div class="text-center max-w-2xl mx-auto space-y-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-medium">Carte d'Excellence Thermale</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Tarifs &amp; Rituels Signatures</h2>
+<p class="font-body-md text-body-md text-outline">
+          Chaque rendez-vous comprend le prêt du linge de bain en coton peigné d’Égypte, sandales de hammam artisanales et accès au salon d'infusion.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Card 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl flex flex-col justify-between space-y-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Hammam &amp; Gommage</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Le Rituel des Sultanes</h3>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-primary leading-none">160 €</div>
+<div class="font-label-sm text-label-sm text-outline mt-1">60 Minutes</div>
+</div>
+</div>
+<div class="space-y-space-xs text-body-md font-body-md text-on-surface-variant">
+<p>1. Bain de vapeur aromatisé aux feuilles d'eucalyptus frais (20 min)</p>
+<p>2. Savonnage noir et gommage mécanique au gant de soie Kessa (25 min)</p>
+<p>3. Rinçage abondant aux bassines de cuivre et aspersion d'eau de rose (15 min)</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Option massage cuir chevelu (+30€)</span>
+<a class="bg-primary-container text-on-primary font-label-sm text-label-sm uppercase px-space-md py-space-xs rounded-lg hover:bg-primary transition-colors" href="#reservation">
+              Sélectionner
+            </a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl flex flex-col justify-between space-y-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Hydrothérapie &amp; Modelage</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">L'Immersion de la Cité</h3>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-primary leading-none">240 €</div>
+<div class="font-label-sm text-label-sm text-outline mt-1">90 Minutes</div>
+</div>
+</div>
+<div class="space-y-space-xs text-body-md font-body-md text-on-surface-variant">
+<p>1. Circuit des bassins d'eau chaude salée &amp; fontaine de glace pilée (30 min)</p>
+<p>2. Modelage signature décontracturant aux huiles chaudes de santal (45 min)</p>
+<p>3. Dégustation d'un thé de menthe verte bio au patio de relaxation (15 min)</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Infusion personnalisée incluse</span>
+<a class="bg-primary-container text-on-primary font-label-sm text-label-sm uppercase px-space-md py-space-xs rounded-lg hover:bg-primary transition-colors" href="#reservation">
+              Sélectionner
+            </a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl flex flex-col justify-between space-y-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Cérémonial Corps Complet</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">L'Oasis Minérale Royale</h3>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-primary leading-none">320 €</div>
+<div class="font-label-sm text-label-sm text-outline mt-1">120 Minutes</div>
+</div>
+</div>
+<div class="space-y-space-xs text-body-md font-body-md text-on-surface-variant">
+<p>1. Session complète de hammam marbré &amp; gommage d'Alep (40 min)</p>
+<p>2. Enveloppement au rhassoul tiède enrichi au miel sauvage et jasmin (20 min)</p>
+<p>3. Grand massage musculaire à la cire tiède de karité d'exception (60 min)</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Accompagnement thérapeute dédié</span>
+<a class="bg-primary-container text-on-primary font-label-sm text-label-sm uppercase px-space-md py-space-xs rounded-lg hover:bg-primary transition-colors" href="#reservation">
+              Sélectionner
+            </a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl flex flex-col justify-between space-y-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Cure Intégrale Prestige</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">La Renaissance Impériale</h3>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-headline-md text-primary leading-none">380 €</div>
+<div class="font-label-sm text-label-sm text-outline mt-1">150 Minutes</div>
+</div>
+</div>
+<div class="space-y-space-xs text-body-md font-body-md text-on-surface-variant">
+<p>1. Rituel bain chaud, vapeur purifiante et savonnage kessa (45 min)</p>
+<p>2. Soin complet Kobido visage aux rouleaux de quartz et sérum précieux (45 min)</p>
+<p>3. Modelage sur-mesure aux pierres de basalte tièdes et huiles nobles (60 min)</p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Coupe de champagne brut offerte</span>
+<a class="bg-primary-container text-on-primary font-label-sm text-label-sm uppercase px-space-md py-space-xs rounded-lg hover:bg-primary transition-colors" href="#reservation">
+              Sélectionner
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION C: LE PAVILLON DES SUITES PRIVATISÉES -->
+<section class="w-full py-space-xl px-margin bg-background" id="suites-privees">
+<div class="max-w-6xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Visual Column -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container-high h-[460px]">
+<img class="w-full h-full object-cover" data-alt="High-end private luxury spa suite with built-in stone heated whirlpool bath, dual massage beds draped in linen, low amber mood lighting beneath historic vaulted ceiling, candle lanterns, champagne bucket on side table, total serenity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZpsTvCwrEpzVvqLanYm54CG_wKcGkMTOF8xzaL3_NeYZsaeOfxvyz9ShQLZG80axLkpiJzDTUWHGLoi4aV3cFSirsev2_ZnlN7e6TcvFCBhlXb1yiU_T14PHrjF3xwAl0Hc6ciJ1V5J_CWgB9MGZ89azHsVSmGYV6NtqSJqm8RI376yO2KCecZdXdN5-odVhN7PDkxzr49J20kyQTudE1j1XOpaeot7Z3a_BKRHGr">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+</div>
+<!-- Overlapping Card -->
+<div class="hidden sm:block absolute -bottom-8 -right-6 bg-surface-container-low/95 backdrop-blur-xl p-space-md rounded-xl shadow-2xl max-w-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">lock</span>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Privatisation Exclusive</div>
+<div class="font-label-sm text-label-sm text-outline">Idéal couples, solitudes dorées &amp; célébrations discrètes</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Narrative Column -->
+<div class="lg:col-span-6 space-y-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-medium">Havre d’Intimité Absolue</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Le Pavillon des Suites Privatisées</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Pour ceux qui recherchent une déconnexion sans compromis, nos deux suites d’exception — <em>Suite Alhambra</em> et <em>Suite Byzance</em> — offrent un sanctuaire entièrement cloîtré au sein du réseau de voûtes historiques.
+          </p>
+<div class="space-y-space-sm pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-primary mt-1">
+<span class="material-symbols-outlined text-[16px]">bathtub</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-medium">Bain Bouillonnant en Granit Noir</h4>
+<p class="font-body-md text-body-md text-outline">Bassin privatif chauffé à 37,5°C avec chromothérapie apaisante et cascades d'eau tiède.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-secondary mt-1">
+<span class="material-symbols-outlined text-[16px]">airline_seat_flat</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-medium">Duo de Tables de Modelage Chauffées</h4>
+<p class="font-body-md text-body-md text-outline">Soins synchronisés dispensés par deux maîtres praticiens formés aux protocoles d'Asie et d'Orient.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-primary mt-1">
+<span class="material-symbols-outlined text-[16px]">air</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-medium">Vaporisation Aromatique Sur-Mesure</h4>
+<p class="font-body-md text-body-md text-outline">Diffusion personnalisée de néroli de Nabeul, bois de cèdre de l'Atlas ou vétiver de Java selon votre humeur.</p>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center gap-space-md">
+<a class="bg-primary-container text-on-primary font-label-lg text-label-lg uppercase px-space-lg py-space-sm rounded-lg hover:bg-primary transition-all" href="#reservation">
+              Réserver une Suite (Dès 450€)
+            </a>
+<span class="font-label-sm text-label-sm text-outline">Accueil champagne &amp; macarons inclus</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION D: LA PHILOSOPHIE DU SILENCE MÉTROPOLITAIN -->
+<section class="w-full py-space-xl px-margin bg-surface-container-lowest">
+<div class="max-w-6xl mx-auto space-y-space-xl">
+<div class="max-w-3xl mx-auto text-center space-y-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-medium">Immersion Acoustique &amp; Sensorielle</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">La Philosophie du Silence Métropolitain</h2>
+<p class="font-body-md text-body-md text-outline">
+          Sous le tumulte des avenues parisiennes, nous avons conçu un bouclier acoustique et psychique où le temps s’arrête. Une retraite souterraine d'un calme monastique.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl space-y-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">volume_off</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Isolement Phonique Absolu</h3>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+            Murs de pierre calcaire de 80 cm d'épaisseur couplés à un système d'atténuation acoustique sous-dalle. Le niveau sonore est maintenu en permanence sous les 22 décibels.
+          </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl space-y-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">light_mode</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Chromothérapie Circadienne</h3>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+            Éclairage indirect réglé à 2200 Kelvins mimant la flamme de cire pure. Absence totale de lumière bleue pour réinitialiser le système nerveux central et l'endormissement.
+          </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl space-y-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">local_cafe</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface">Apothicairerie Botanique</h3>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+            Notre herboriste élabore quotidiennement des infusions drainantes, calmantes ou toniques, servies tièdes dans des bols en grès faits main par un artisan céramiste.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION E: TÉMOIGNAGES & DISTINCTIONS -->
+<section class="w-full py-space-xl px-margin bg-background">
+<div class="max-w-6xl mx-auto space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-medium">Reconnaissance de la Presse &amp; de Nos Hôtes</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Témoignages &amp; Distinctions</h2>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-secondary text-[18px]">workspace_premium</span>
+<span>Palmarès International de l'Hôtellerie 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Press 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              « Sous les voûtes de marbre d'Écrin Impérial, Paris s’évanouit complètement. C’est le hammam contemporain le plus sculptural et exigeant d'Europe continentale. »
+            </p>
+</div>
+<div>
+<div class="font-title-md text-title-md text-primary font-medium">Vogue Paris</div>
+<div class="font-label-sm text-label-sm text-outline">Guide Spas &amp; Évasions Urbaines</div>
+</div>
+</div>
+<!-- Press 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              « Un chef-d’œuvre d'architecture sous-terraine où la pureté de la vapeur chaude dialogue avec la pierre froide. Le rituel du savon noir y est élevé au rang de grand art. »
+            </p>
+</div>
+<div>
+<div class="font-title-md text-title-md text-primary font-medium">Condé Nast Johansens</div>
+<div class="font-label-sm text-label-sm text-outline">Élu Meilleur Sanctuaire Urbain 2024</div>
+</div>
+</div>
+<!-- VIP Guest -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-xl flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              « La privatisation de la Suite Byzance pour un rituel à deux a été l'expérience la plus ressourçante de notre année. L'attention de la conciergerie est irréprochable. »
+            </p>
+</div>
+<div>
+<div class="font-title-md text-title-md text-primary font-medium">Comtesse H. de Montmirail</div>
+<div class="font-label-sm text-label-sm text-outline">Membre du Cercle Privé depuis 2021</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION F: FORMULAIRE DE CONCIERGERIE & PRIVATISATION -->
+<section class="w-full py-space-xl px-margin bg-surface-container-lowest" id="reservation">
+<div class="max-w-4xl mx-auto rounded-2xl bg-surface-container-low p-space-xl shadow-2xl space-y-space-lg">
+<div class="text-center space-y-space-xs max-w-xl mx-auto">
+<div class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-medium">Sur Rendez-Vous Uniquement</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Conciergerie &amp; Privatisation</h2>
+<p class="font-body-md text-body-md text-outline">
+          Pour une séance individuelle, un rituel en duo ou la privatisation intégrale des thermes pour un événement d’exception.
+        </p>
+</div>
+<form class="space-y-space-md" onsubmit="event.preventDefault(); alert('Votre demande de réservation a été transmise à notre conciergerie privée. Un intendant vous confirmera la disponibilité dans l\'heure.');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Civilité &amp; Nom Complet</label>
+<input class="w-full bg-surface-container px-space-md py-space-sm text-body-md font-body-md text-on-surface placeholder:text-outline/40 rounded-lg outline-none focus:bg-surface-container-high transition-all" placeholder="ex. Éléonore de V." required="" type="text">
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Coordonnées Téléphoniques / Concierge</label>
+<input class="w-full bg-surface-container px-space-md py-space-sm text-body-md font-body-md text-on-surface placeholder:text-outline/40 rounded-lg outline-none focus:bg-surface-container-high transition-all" placeholder="+33 6 00 00 00 00" required="" type="tel">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Date Souhaitée</label>
+<input class="w-full bg-surface-container px-space-md py-space-sm text-body-md font-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-high transition-all" required="" type="date">
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Expérience Désirée</label>
+<select class="w-full bg-surface-container px-space-md py-space-sm text-body-md font-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-high transition-all">
+<option>Le Bain Oriental Impérial (60m)</option>
+<option>L'Immersion de la Cité (90m)</option>
+<option>L'Oasis Minérale Royale (120m)</option>
+<option>La Renaissance Impériale (150m)</option>
+<option>Privatisation Suite Alhambra</option>
+<option>Privatisation Intégrale des Thermes</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Nombre d'Hôtes</label>
+<select class="w-full bg-surface-container px-space-md py-space-sm text-body-md font-body-md text-on-surface rounded-lg outline-none focus:bg-surface-container-high transition-all">
+<option>1 Hôte (Solo)</option>
+<option>2 Hôtes (Duo)</option>
+<option>3 à 4 Hôtes</option>
+<option>Privatisation Complète (Jusqu'à 12 Hôtes)</option>
+</select>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Exigences Particulières, Allergies ou Demandes Traiteur</label>
+<textarea class="w-full bg-surface-container px-space-md py-space-sm text-body-md font-body-md text-on-surface placeholder:text-outline/40 rounded-lg outline-none focus:bg-surface-container-high transition-all" placeholder="Précisez ici vos sensibilités cutanées, préférences d'essences végétales ou demandes de transferts privés..." rows="3"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Protocole de discrétion absolue et confidentialité VIP</span>
+</div>
+<button class="w-full sm:w-auto bg-primary-container text-on-primary font-label-lg text-label-lg uppercase px-space-xl py-space-md rounded-lg shadow-xl hover:bg-primary transition-all flex items-center justify-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Transmettre la Demande Privée</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant"><div class="w-full px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center"><span class="font-headline-sm text-headline-sm text-primary">✦</span></div><span class="font-headline-md text-headline-md text-primary tracking-wide">AURELIA</span></div><p class="font-body-md text-body-md text-outline leading-relaxed">Sanctuaire architectural thermal réservé aux rituels de régénération, de sérénité et d'immersion sensorielle de haute couture.</p><div class="pt-space-xs space-y-1"><div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">verified</span><span class="uppercase tracking-widest">World Luxury Spa Awards 2024 Winner</span></div><div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">hotel_class</span><span class="uppercase tracking-widest">Prix de l'Architecture &amp; du Bien-Être</span></div></div></div><div class="space-y-space-sm"><h3 class="font-title-md text-title-md text-on-surface uppercase tracking-widest font-semibold">Nos Adresses Privées</h3><ul class="space-y-space-sm font-body-md text-body-md text-outline"><li class="space-y-0.5"><div class="text-on-surface font-medium">Triangle d'Or · Paris</div><div>18 Avenue Montaigne, 75008 Paris</div><div class="text-label-sm text-primary">08:00 — 23:00 quotidiennes</div></li><li class="space-y-0.5 pt-space-xs"><div class="text-on-surface font-medium">Mayfair · Londres</div><div>44 Mount Street, London W1K 2RX</div><div class="text-label-sm text-primary">08:00 — 23:00 quotidiennes</div></li><li class="space-y-0.5 pt-space-xs"><div class="text-on-surface font-medium">Tribeca · New York</div><div>178 Franklin Street, New York, NY 10013</div><div class="text-label-sm text-primary">08:00 — 23:00 quotidiennes</div></li></ul></div><div class="space-y-space-sm"><h3 class="font-title-md text-title-md text-on-surface uppercase tracking-widest font-semibold">Conciergerie VIP</h3><p class="font-body-md text-body-md text-outline leading-relaxed">Assistance dédiée 24/7 pour nos membres du cercle privé et transferts avec chauffeur.</p><div class="space-y-space-xs font-label-lg text-label-lg"><div class="flex items-center gap-space-xs text-primary"><span class="material-symbols-outlined text-[18px]">phone_in_talk</span><span>+33 1 40 50 20 10 (Paris)</span></div><div class="flex items-center gap-space-xs text-primary"><span class="material-symbols-outlined text-[18px]">phone_in_talk</span><span>+44 20 7946 0912 (London)</span></div><div class="flex items-center gap-space-xs text-outline"><span class="material-symbols-outlined text-[18px]">mail</span><span>concierge@aurelia-thermes.com</span></div></div></div><div class="space-y-space-sm"><h3 class="font-title-md text-title-md text-on-surface uppercase tracking-widest font-semibold">Cercle Privé &amp; Lettre</h3><p class="font-body-md text-body-md text-outline">Recevez en avant-première nos invitations aux solstices thermaux et soins en éditions limitées.</p><form class="space-y-space-xs"><div class="relative"><input class="w-full bg-surface-container px-space-md py-space-sm text-body-md font-body-md text-on-surface placeholder:text-outline/60 rounded-lg outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Votre adresse confidentielle" type="email"><button class="absolute right-2 top-2 bottom-2 px-space-sm bg-primary-container text-on-primary rounded font-label-sm text-label-sm uppercase tracking-wider hover:bg-primary transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button></div><p class="font-label-sm text-label-sm text-outline/80 leading-relaxed">Adhésion soumise à agrément du comité de patronage.</p></form></div></div><div class="mt-space-xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-outline"><p>© 2024 Aurelia Haute Hydrothérapie &amp; Club Thermal. Tous droits réservés.</p><div class="flex items-center gap-space-lg uppercase tracking-wider"><a class="hover:text-primary transition-colors" href="#">Confidentialité</a><a class="hover:text-primary transition-colors" href="#">Charte des Bains</a><a class="hover:text-primary transition-colors" href="#">Conditions des Suites</a><a class="hover:text-primary transition-colors" href="#">Presse &amp; Patrimoine</a></div></div></div></footer>
+
+
+
+</body></html>
